@@ -14,8 +14,6 @@ jobs:
       matrix:
         features:
           - go-mod-cache
-          - color
-          - hello
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -36,8 +34,6 @@ jobs:
       matrix:
         features:
           - go-mod-cache
-          - color
-          - hello
     steps:
       - uses: actions/checkout@v4
 
