@@ -7,8 +7,7 @@ Mounts the Go Module cache (`GOMODCACHE`) to a Docker Volume to share between mu
 
 ```json
 "features": {
-    "ghcr.io/forwardsoftware/devcontainer-features/go-mod-cache:1": {
-    }
+    "ghcr.io/forwardsoftware/devcontainer-features/go-mod-cache:1": {}
 }
 ```
 
@@ -22,4 +21,4 @@ Mounts the Go Module cache (`GOMODCACHE`) to a Docker Volume to share between mu
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/go-mod-cache/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/forwardsoftware/devcontainer-features/blob/main/src/go-mod-cache/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
