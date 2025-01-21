@@ -1,0 +1,35 @@
+{
+    "with_go": {
+        "image": "mcr.microsoft.com/devcontainers/go:1-1",
+        "features": {
+            "go-mod-cache": {}
+        }
+    },
+    "go_feature": {
+        "image": "mcr.microsoft.com/devcontainers/base",
+        "features": {
+            "ghcr.io/devcontainers/features/go:1": {},
+            "go-mod-cache": {}
+        }
+    },
+    "zsh_shell": {
+        "image": "mcr.microsoft.com/devcontainers/go:1-1",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "configureZshAsDefaultShell": true
+            },
+            "go-mod-cache": {}
+        }
+    },
+    "custom_user": {
+        "image": "mcr.microsoft.com/devcontainers/base",
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "username": "golang"
+            },
+            "ghcr.io/devcontainers/features/go:1": {},
+            "go-mod-cache": {}
+        },
+        "remoteUser": "golang"
+    }
+}

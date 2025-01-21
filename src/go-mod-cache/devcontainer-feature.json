@@ -1,0 +1,18 @@
+{
+    "name": "Go Mod Cache",
+    "id": "go-mod-cache",
+    "version": "1.0.0",
+    "description": "Mounts the Go Module cache (`GOMODCACHE`) to a Docker Volume to share between multiple Dev Containers.",
+    "options": {},
+    "mounts": [
+        {
+            "source": "global-devcontainer-go-cache",
+            "target": "/mnt/go-cache",
+            "type": "volume"
+        }
+    ],
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/go"
+    ]
+}
